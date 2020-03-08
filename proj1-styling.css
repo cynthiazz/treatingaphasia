@@ -93,10 +93,21 @@ body, html {
 	cursor: pointer;
 }
 
-.section-page {
+#section-page-wrapper {
 	position: relative;
 	width: 100vw;
 	height: 90vh;
+}
+
+.section-page {
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 90vh;
+}
+
+#music-page, #vnest-page, #lpaa-page, #ref-page {
+	display: none;
 }
 
 .section-title-box {
