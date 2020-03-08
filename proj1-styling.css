@@ -90,6 +90,7 @@ body, html {
 .section-link:hover {
 	opacity: 1;
 	transition-duration: 300ms;
+	cursor: pointer;
 }
 
 .section-page {
@@ -97,3 +98,54 @@ body, html {
 	width: 100vw;
 	height: 90vh;
 }
+
+.section-title-box {
+	position: relative;
+	width: 100vw;
+	height: 25vh;
+}
+
+.section-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 28px;
+}
+
+.section-body {
+	position: relative;
+	width: 60vw;
+	height: auto;
+	padding: 0vh 5vw 5vh 5vw;
+	left: 50%;
+	-ms-transform: translateX(--50%);
+	transform: translateX(-50%);
+}
+
+.source {
+	position: relative;
+	margin-top: 5vh;
+}
+
+.intro-box {
+	position: relative;
+	width: 60vw;
+	margin-top: 1vh;
+	margin-bottom: 3vh;
+}
+
+.intro-subtitle {
+	position: relative;
+	width: 60vw;
+	font-size: 20px;
+	font-family: Crimson-Text;
+	font-style: italic;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+
+
+
