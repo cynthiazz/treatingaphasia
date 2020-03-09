@@ -57,9 +57,42 @@ body, html {
 	text-align: center;
 }
 
+#arrow {
+	position: absolute;
+	top: 87%;
+	width: 4vw;
+	height: 4vh;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+#arrow img {
+	width: 4vw;
+	height: auto;
+}
+
+#arrow img {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+#arrow img {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); opacity: 0.8;}
+    100% { transform: translateY(-2vh); opacity: 0.5;}
+}
+@keyframes mover {
+    0% { transform: translateY(0); opacity: 0.8;}
+    100% { transform: translateY(-2vh); opacity: 0.5;}
+}
+
 #sections {
 	position: relative;
-	height: auto;
+	overflow: auto;
 }
 
 #header {
