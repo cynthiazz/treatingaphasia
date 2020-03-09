@@ -8,17 +8,30 @@ body, html {
 	height: 100vh;
 	width: 100vw;
 	position: relative;
+	background-image: url("./images/floral.svg");
 }
 
 #initial-content {
 	height: 60vh;
-	width: 60vw;
+	width: 50vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	background: lavender;
+	background: #FCFAF6;
+	font-family: Crimson-Text;
+}
+
+#title-frame {
+	height: 50vh;
+	width: 42vw;
+	border: solid 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 #title-flexbox {
@@ -36,7 +49,6 @@ body, html {
 	padding: 5vh;
 	font-size: 80px;
 	text-align: center;
-	border: solid;
 }
 
 #sub-title {
@@ -50,15 +62,18 @@ body, html {
 }
 
 #header {
+	position: sticky;
+	top: 0;
 	width: 100vw;
 	height: 10vh;
 	background: #FEFEFE;
+	border-top: 1px solid #52303F;
 	border-bottom: 1px solid #52303F;
 	z-index: 999;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background: mistyrose;
+	background: #F5E5ED;
 }
 
 #section-links-box {
@@ -140,14 +155,14 @@ body, html {
 	margin-top: 5vh;
 }
 
-.intro-box {
+.section-box {
 	position: relative;
 	width: 60vw;
 	margin-top: 1vh;
 	margin-bottom: 3vh;
 }
 
-.intro-subtitle {
+.section-subtitle {
 	position: relative;
 	width: 60vw;
 	font-size: 20px;
@@ -157,6 +172,31 @@ body, html {
 	padding-bottom: 0.5em;
 }
 
+.section-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: baseline;
+	align-items: flex-start;
+}
+
+.section-text div {
+	margin: 1vh 0 1vh 0;
+}
+
+.section-img {
+	width: 50vw;
+	height: auto;
+	position: relative;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	font-size: 13px;
+}
+
+.section-img img {
+	width: 50vw;
+	height: auto;
+}
 
 
 
