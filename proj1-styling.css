@@ -21,6 +21,7 @@ body, html {
 	transform: translate(-50%, -50%);
 	background: #FCFAF6;
 	font-family: Crimson-Text;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
 }
 
 #title-frame {
@@ -35,10 +36,12 @@ body, html {
 }
 
 #title-flexbox {
-	height: 60vh;
+	height: 48vh;
 	width: 30vw;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 	position: absolute;
 	left: 50%;
 	-ms-transform: translateX(-50%);
@@ -47,12 +50,18 @@ body, html {
 
 #title {
 	padding: 5vh;
-	font-size: 80px;
+	font-size: 75px;
 	text-align: center;
 }
 
-#sub-title {
-	padding-top: 5vh;
+#subtitle {
+	font-size: 16px;
+	text-align: center;
+	font-style: italic;
+}
+
+#title-topics {
+	padding-top: 2vh;
 	font-size: 24px;
 	text-align: center;
 }
@@ -93,6 +102,12 @@ body, html {
 #sections {
 	position: relative;
 	overflow: auto;
+}
+
+#sections a {
+	text-decoration: none;
+	color: #6C3F60;
+	font-weight: 600;
 }
 
 #header {
@@ -214,6 +229,7 @@ body, html {
 	flex-direction: column;
 	justify-content: baseline;
 	align-items: flex-start;
+	text-align: justify;
 }
 
 .section-block div {
@@ -222,7 +238,6 @@ body, html {
 
 .section-embed {
 	padding: 2em;
-	width: 50vw;
 	height: auto;
 	position: relative;
 	left: 50%;
@@ -248,5 +263,22 @@ body, html {
 	left: 50%;
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
+}
+
+#aphasia-type-diag {
+	width: 60vw;
+	position: relative;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+#ref-page ul {
+	padding-left: 0;
+    margin: 0.2em 0 0.2em 0;
+}
+
+#ref-page a {
+	font-weight: 500;
 }
 
