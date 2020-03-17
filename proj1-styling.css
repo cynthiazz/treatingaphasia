@@ -190,6 +190,7 @@ body, html {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	font-size: 28px;
+	font-family: Crimson Text;
 }
 
 .section-body {
@@ -256,6 +257,49 @@ body, html {
 	height: 50vh;
 }
 
+#vnest-steps {
+	width: 50vw;
+	display: flex;
+	position: relative;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	flex-direction: column;
+	justify-content: center;
+}
+
+#vnest-steps div {
+	margin-bottom: 1.5em;
+}
+
+#vnest-steps em {
+	font-weight: 600;
+	padding-right: 0.4em;
+	font-family: Crimson-Text;
+}
+
+#vnest-steps ul {
+	text-align: center;
+	font-weight: 600;
+}
+
+.vnest-table {
+	margin-top: 0.5em;
+	position: relative;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-spacing: 0.5em;
+}
+
+.vnest-table td, .vnest-table th {
+	background: #FAF9F7;
+	text-align: center;
+	padding: 0.5em;
+	border: 1px solid;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
 #lpaa-diag1 {
 	width: 30vw;
 	height: auto;
@@ -273,12 +317,21 @@ body, html {
 	transform: translateX(-50%);
 }
 
+#ref-page {
+	font-family: Crimson Text;
+}
+
 #ref-page ul {
 	padding-left: 0;
     margin: 0.2em 0 0.2em 0;
+    font-size: 17px;
 }
 
 #ref-page a {
 	font-weight: 500;
 }
 
+#creds {
+	line-height: 1.2em;
+	margin-top: 5vh;
+}
